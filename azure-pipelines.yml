@@ -2,6 +2,12 @@ trigger:
 - master
 
 jobs:
+- job: find-wtf
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+    - bash: which find
+
 - job: Regular
   pool:
     vmImage: 'vs2017-win2016'
