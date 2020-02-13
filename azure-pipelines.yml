@@ -2,7 +2,7 @@ trigger:
 - master
 
 jobs:
-- job: find-wtf
+- job: findwtf
   pool:
     vmImage: 'windows-latest'
   steps:
